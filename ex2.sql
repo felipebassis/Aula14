@@ -3,23 +3,21 @@
 insert into 
 Cidade(uf_id,nome)
 
-values
+select id,'Chapecó' from uf where nome = 'SC',
+select id,'Blumenau' from uf where nome = 'SC',
+select id,'Blumenau' from uf where nome = 'SC',
 
-(24,'Chapecó'),
-(24,'Blumenau'),
-(24,'Joinville'),
+select id,'Curitiba' from uf where nome = 'PR',
+select id,'Maringá' from uf where nome = 'PR',
+select id,'Lunardeli' from uf where nome = 'PR',
+select id,'Apucarana' from uf where nome = 'PR',
+select id,'Santa Fé' from uf where nome = 'PR',
+select id,'São Miguel do Iguaçu' from uf where nome = 'PR',
+select id,'Arapongas' from uf where nome = 'PR',
+select id,'Ponta Grossa' from uf where nome = 'PR',
+select id,'Jandaia do Sul' from uf where nome = 'PR',
 
-(16,'Curitiba'),
-(16,'Maringá'),
-(16,'Lunardeli'),
-(16,'Apucarana'),
-(16,'Santa Fé'),
-(16,'São Miguel do Iguaçu'),
-(16,'Arapongas'),
-(16,'Ponta Grossa'),
-(16,'Jandaia do Sul'),
-
-(25,'Ribeirão Preto');
+select id,'Ribeirão Preto' from uf where nome = 'SP';
 
 select uf.nome,cidade.nome
 from uf
